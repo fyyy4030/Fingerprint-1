@@ -1,14 +1,7 @@
-﻿生成启动时间为 2017/7/21 16:43:59。
-     1>项目“E:\测试程序2\Test\Test\Test.vcxproj”在节点 2 上(Build 个目标)。
-     1>ClCompile:
-         C:\Developer\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
-         main.cpp
-     1>e:\测试程序2\opencv32\include\opencv2\core\persistence.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-     1>e:\测试程序2\opencv32\include\opencv2\core\utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-     1>e:\测试程序2\opencv32\include\opencv2\imgproc.hpp(606): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-     1>e:\测试程序2\test\test\main.cpp(28): warning C4018: “<”: 有符号/无符号不匹配
-       Link:
-         C:\Developer\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\测试程序2\Test\Debug\Test.exe" /INCREMENTAL /NOLOGO opencv_aruco320d.lib opencv_bgsegm320d.lib opencv_bioinspired320d.lib opencv_calib3d320d.lib opencv_ccalib320d.lib opencv_core320d.lib opencv_datasets320d.lib opencv_dnn320d.lib opencv_dpm320d.lib opencv_face320d.lib opencv_features2d320d.lib opencv_flann320d.lib opencv_fuzzy320d.lib opencv_highgui320d.lib opencv_imgcodecs320d.lib opencv_imgproc320d.lib opencv_line_descriptor320d.lib opencv_ml320d.lib opencv_objdetect320d.lib opencv_optflow320d.lib opencv_photo320d.lib opencv_plot320d.lib opencv_reg320d.lib opencv_rgbd320d.lib opencv_saliency320d.lib opencv_shape320d.lib opencv_stereo320d.lib opencv_stitching320d.lib opencv_structured_light320d.lib opencv_superres320d.lib opencv_surface_matching320d.lib opencv_text320d.lib opencv_tracking320d.lib opencv_video320d.lib opencv_videoio320d.lib opencv_videostab320d.lib opencv_xfeatures2d320d.lib opencv_ximgproc320d.lib opencv_xobjdetect320d.lib opencv_xphoto320d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\测试程序2\Test\Debug\Test.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\测试程序2\Test\Debug\Test.lib" /MACHINE:X86 Debug\export.obj
+﻿生成启动时间为 2017/8/10 9:46:28。
+     1>项目“C:\Developer\GitRepository\Fingerprint\Test\Test.vcxproj”在节点 2 上(Build 个目标)。
+     1>Link:
+         C:\Developer\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Developer\GitRepository\Fingerprint\Debug\Test.exe" /INCREMENTAL /NOLOGO opencv_aruco320d.lib opencv_bgsegm320d.lib opencv_bioinspired320d.lib opencv_calib3d320d.lib opencv_ccalib320d.lib opencv_core320d.lib opencv_datasets320d.lib opencv_dnn320d.lib opencv_dpm320d.lib opencv_face320d.lib opencv_features2d320d.lib opencv_flann320d.lib opencv_fuzzy320d.lib opencv_highgui320d.lib opencv_imgcodecs320d.lib opencv_imgproc320d.lib opencv_line_descriptor320d.lib opencv_ml320d.lib opencv_objdetect320d.lib opencv_optflow320d.lib opencv_photo320d.lib opencv_plot320d.lib opencv_reg320d.lib opencv_rgbd320d.lib opencv_saliency320d.lib opencv_shape320d.lib opencv_stereo320d.lib opencv_stitching320d.lib opencv_structured_light320d.lib opencv_superres320d.lib opencv_surface_matching320d.lib opencv_text320d.lib opencv_tracking320d.lib opencv_video320d.lib opencv_videoio320d.lib opencv_videostab320d.lib opencv_xfeatures2d320d.lib opencv_ximgproc320d.lib opencv_xobjdetect320d.lib opencv_xphoto320d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Developer\GitRepository\Fingerprint\Debug\Test.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Developer\GitRepository\Fingerprint\Debug\Test.lib" /MACHINE:X86 Debug\export.obj
          Debug\file.obj
          Debug\floatfield.obj
          Debug\histogram.obj
@@ -22,9 +15,10 @@
          Debug\main.obj
          Debug\matching.obj
          Debug\minutia.obj
-         Test.vcxproj -> E:\测试程序2\Test\Debug\Test.exe
-     1>已完成生成项目“E:\测试程序2\Test\Test\Test.vcxproj”(Build 个目标)的操作。
+         LINK : 没有找到 C:\Developer\GitRepository\Fingerprint\Debug\Test.exe 或上一个增量链接没有生成它；正在执行完全链接
+         Test.vcxproj -> C:\Developer\GitRepository\Fingerprint\Debug\Test.exe
+     1>已完成生成项目“C:\Developer\GitRepository\Fingerprint\Test\Test.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:02.35
+已用时间 00:00:01.16

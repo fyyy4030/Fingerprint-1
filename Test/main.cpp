@@ -39,7 +39,7 @@ int Otsu(IplImage* src)
 	int height = src->height;
 	int width = src->width;
 
-	//histogram    
+	//计算直方图    
 	float histogram[256] = { 0 };
 	for (int i = 0; i < height; i++)
 	{
@@ -49,18 +49,18 @@ int Otsu(IplImage* src)
 			histogram[*p++]++;
 		}
 	}
-	//normalize histogram    
+	//直方图均衡    
 	int size = height * width;
 	for (int i = 0; i < 256; i++)
 	{
 		histogram[i] = histogram[i] / size;
 	}
 
-	//average pixel value    
+	//平均    
 	float avgValue = 0;
 	for (int i = 0; i < 256; i++)
 	{
-		avgValue += i * histogram[i];  //整幅图像的平均灰度  
+		avgValue += i * histogram[i];   
 	}
 
 	int threshold;
@@ -309,7 +309,7 @@ int main()
 
 
 	FingerprintGetFrequency3(image, direction, frequency3);
-	//FingerprintGetFrequency1(image, direction, frequency);
+	FingerprintGetFrequency1(image, direction, frequency);
 	//转opencv的图像，进行存储
 	buffer = ImageGetBuffer(image);
 	fname = "_GetFre.jpg";
@@ -346,22 +346,22 @@ int main()
 	//转opencv的图像，进行存储
 
 
-	FingerprintGetFixedMask(image, mask, 9);
-	//转opencv的图像，进行存储
-	buffer = ImageGetBuffer(mask);
-	fname = "_FixedMask.jpg";
-	for (int ii = 0; ii < pGray2.height; ii++)
-	{
-		for (int jj = 0; jj < pGray2.width; jj++)
-		{
-			bb = *(buffer + ii*pGray2.width + jj);
-			mt.at<uchar>(ii, jj) = bb;
+	//FingerprintGetFixedMask(image, mask, 9);
+	////转opencv的图像，进行存储
+	//buffer = ImageGetBuffer(mask);
+	//fname = "_FixedMask.jpg";
+	//for (int ii = 0; ii < pGray2.height; ii++)
+	//{
+	//	for (int jj = 0; jj < pGray2.width; jj++)
+	//	{
+	//		bb = *(buffer + ii*pGray2.width + jj);
+	//		mt.at<uchar>(ii, jj) = bb;
 
-		}
-	}
+	//	}
+	//}
 
-	imwrite(fname, mt);
-	//转opencv的图像，进行存储
+	//imwrite(fname, mt);
+	////转opencv的图像，进行存储
 
 	ImagePixelNormalize(image, 9);
 	buffer = ImageGetBuffer(image);
@@ -377,6 +377,7 @@ int main()
 	}
 	imwrite(fname, mt);
 	//转opencv的图像，进行存储
+
 	ImageEnhanceGabor(image, direction, frequency, mask, 4);
 
 	//转opencv的图像，进行存储

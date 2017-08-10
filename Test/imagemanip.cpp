@@ -30,7 +30,7 @@ FvsError_t FingerprintGetFixedMask(const FvsImage_t image, FvsImage_t mask, cons
 	FvsByte_t* out;
 
 	nRet = ImageSetSize(mask, w, h);
-	if (nRet == FvsOK)
+	if (nRet != FvsOK)
 		nRet = ImageClear(mask);
 
 	out = ImageGetBuffer(mask);
@@ -625,10 +625,10 @@ FvsError_t FingerprintGetMask(const FvsImage_t image,
                 }
             }
         /* ²¹¶´ */
-        for (y = 0; y < 15; y++)
+        for (y = 0; y < 25; y++)
             (void)ImageDilate(mask);
         /* È¥³ý±ß½ç */
-        for (y = 0; y < 12; y++)
+        for (y = 0; y < 60; y++)
             (void)ImageErode(mask);
     }
     return nRet;
